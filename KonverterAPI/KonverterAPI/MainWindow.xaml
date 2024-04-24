@@ -1,0 +1,49 @@
+﻿<Window x:Class="KonverterAPI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KonverterAPI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FF0A0A0A">
+        <StackPanel Width="300">
+            <TextBlock Margin="0 0 0 10" Text="Конвертер" Foreground="White"/>
+            <StackPanel Margin="0 0 0 10">
+                <TextBox x:Name="sum"  Text=""/>
+            </StackPanel>
+            <StackPanel Margin="0 0 0 10">
+                <TextBlock Text="Из" Foreground="White"/>
+                <ComboBox  x:Name="Z_cb">
+                    <ComboBoxItem>
+                        <TextBlock FontSize="16">USD</TextBlock>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <TextBlock FontSize="16">EUR</TextBlock>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <TextBlock FontSize="16">GBP</TextBlock>
+                    </ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel  Margin="0 0 0 20">
+                <TextBlock Text="В" Foreground="White"/>
+                <ComboBox x:Name="V_cb">
+                    <ComboBoxItem>
+                        <TextBlock FontSize="16">USD</TextBlock>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <TextBlock FontSize="16">EUR</TextBlock>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <TextBlock FontSize="16">GBP</TextBlock>
+                    </ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel>
+                <Button Click="Button_Click" FontSize="20" Content="Конвертировать"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
